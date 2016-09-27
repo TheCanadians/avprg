@@ -10,9 +10,12 @@ Sinus::Sinus()
 Sinus::~Sinus(void)
 {
 }
+void Sinus::calculateSinus(){
+    float value = sin(2 * pi * index / 100);
+    getValue();
+}
 
 float Sinus::getValue(){
-    float value = sin(2 * pi * index / 100);
     index++;
     return value;
 }

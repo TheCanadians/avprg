@@ -33,7 +33,7 @@ void MainWindow::initializeAudio(){
 
 void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
 {
-
+    
 }
 
 void MainWindow::on_amplitude_valueChanged(int value)

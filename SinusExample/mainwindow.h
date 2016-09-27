@@ -19,6 +19,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_comboBox_activated(const QString &arg1);
+
+    void on_comboBox_currentTextChanged(const QString &arg1);
+
+    void on_amplitude_valueChanged(int value);
+
 private:
     void initializeAudio();
     Ui::MainWindow *ui;

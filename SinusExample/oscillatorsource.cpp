@@ -20,7 +20,7 @@ const QAudioFormat& OscillatorSource::format() const{
 qint64 OscillatorSource::read(float** buffer, qint64 numFrames){
     // get audio data for left channel
     for(int i = 0; i < numFrames; i++){
-        buffer[0][i] = sinus.getValue();
+        buffer[0][i] = sinus.calculateSinus();
     }
     // copy to other channels
     for(int c = 0; c < audioFormat.channelCount(); c++){
